@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Procura videos no youtube atráves de um seletor",
+	"version" : "1.0.0",
+	"description" : "Facilita a busca de videos no youtube atráves de um seletor.",
+	"developer" : {
+		"name": "Welder Mileu",
+		"url": ""
+	},
+	"icons" :
+		{
+			"64" : "rede.png"
+		}
+	,
+	"content_scripts" : [
+		{
+			"matches" : [
+				"https://www.youtube.com/"
+			],
+			"css" : ["style.css"],
+			"js" : ["main.js"]
+		}
+	]
+}
